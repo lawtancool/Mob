@@ -1,12 +1,12 @@
 import React from 'react';
 import { Router, Switch, Route, Link, useHistory } from 'react-router-dom';
 
-const Fun = (props) => {
+const Lobby = (props) => {
     return (
-        <div className='wrapper'>
-            <h1>fun</h1> 
+        <div className='insert_class_name_here'>
+            <h1>lobby</h1> 
         </div>
     );
 }
 
-export default Fun;
+export default Lobby;
