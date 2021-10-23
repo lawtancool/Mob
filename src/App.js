@@ -1,5 +1,7 @@
 import Main from './Main';
-import Fun from './Fun';
+import Lobby from './Lobby';
+import Map from './Map';
+
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,7 +16,9 @@ export default function App() {
           renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path='/' component={Main} />
-          <Route exact path='/Fun' component={Fun} />
+          <Route exact path='/lobby' component={Lobby} />
+          <Route exact path='/map' component={Map} />
+
 
 
           {/* <Route exact path='/:subject/' component={Subject} />
