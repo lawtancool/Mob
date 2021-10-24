@@ -25,6 +25,21 @@ body {
   font-size: 35px;
 }
 
+.questions {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 25px;
+}
+
+.dietary {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 25px;
+}
+
+.time {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 25px;
+}
+
 h1 {
   text-align: center;
 }
