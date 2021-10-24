@@ -20,6 +20,8 @@ const Lobby = (props) => {
         { value: "vegan", label: "Vegan"},
         { value: "vegetarian", label: "Vegetarian"},
         { value: "halal", label: "Halal"},
+        { value: "kosher", label: "Kosher"},
+        { value: "no-gluten", label: "Gluten-Free"}
     ]
 
     const history = useHistory();
