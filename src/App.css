@@ -60,6 +60,11 @@ button {
   font-family: "Poppins";
 }
 
+img {
+  padding-top: 100px;
+  padding-right: 5px;
+}
+
 p {
   text-align: center;
   align-items: center;

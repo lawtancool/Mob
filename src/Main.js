@@ -3,6 +3,8 @@ import { Router, Switch, Route, Link, useHistory } from 'react-router-dom';
 import { collection, doc, setDoc } from "firebase/firestore"; 
 
 import { db } from './firebase';
+import { logDOM } from '@testing-library/react';
+import logo from './logo.png';
 
 const Main = (props) => {
 
@@ -24,6 +26,7 @@ const Main = (props) => {
                 <button id = "rounded-edge2">copy</button>
                 <Link to={newLobbyRef.id}><button id = "rounded-edge2">enter lobby</button></Link>
             </div>
+            <img className = "center-container" src = {logo} alt = "Logo" />
         </div>
     );
 }
