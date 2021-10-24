@@ -1,113 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Red+Hat+Text:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Red+Hat+Text:wght@300&display=swap");
 body {
   margin: 0;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   text-align: center;
 }
 
 .App {
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 
-  .mob {
-    text-align: center;
-    font-family: "Major Mono Display", monospace;
-    font-size: 100px;
-  }
+.mob {
+  text-align: center;
+  font-family: "Major Mono Display", monospace;
+  font-size: 100px;
+}
 
-  body {
-    font-family: "Red Hat Text", sans-serif;
-    font-size: 35px;
-  }
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 35px;
+}
 
-  h1 {
-    text-align: center;
-  }
+h1 {
+  text-align: center;
+}
 
-  h2 {
-    text-align: center;
-  }
+h2 {
+  text-align: center;
+}
 
-  .center-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 50px;
-  }
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
+}
 
-  .url-container {
-    font-size: 40px;
-  }
+.url-container {
+  font-size: 40px;
+}
 
-  button {
-      text-align: center;
-      font-size: 35px;
-      font-family: "Poppins";
-  }
+button {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Poppins";
+}
 
-  p {
-      text-align: center;
-      align-items: center;
-  }
+p {
+  text-align: center;
+  align-items: center;
+}
 
-  #rounded-edge1 {
-    text-align: center;
-    border-radius: 45px;
-    border: 2px solid #e4a0b0;
-    padding: 20px;
-    width: 800px;
-    height: 30px;
-  }
+#rounded-edge1 {
+  text-align: center;
+  border-radius: 45px;
+  border: 2px solid #e4a0b0;
+  padding: 20px;
+  width: 800px;
+  height: 30px;
+}
 
-  #rounded-edge2 {
-    text-align: center;
-    border-radius: 45px;
-    border: 2px solid #cfd992;
-    background: #cfd992;
-    padding: 20px;
-    width: 275px;
-    height: 100px;
-  }
+#rounded-edge2 {
+  text-align: center;
+  border-radius: 45px;
+  border: 2px solid #cfd992;
+  background: #cfd992;
+  padding: 20px;
+  width: 275px;
+  height: 100px;
+}
 
-  #rounded-tan {
-    border-radius: 30px;
-    border: 1px solid #F1DAC5;
-    margin: 30px;
-    padding: 20px;
-    width: 800px;
-    height: 50px;
-  }
+#rounded-tan {
+  border-radius: 30px;
+  border: 1px solid #f1dac5;
+  margin: 30px;
+  padding: 20px;
+  width: 800px;
+  height: 50px;
+}
 
-  #rounded-green {
-    border-radius: 30px;
-    border: 1px solid #cfd992;
-    margin: 30px;
-    padding: 20px;
-    width: 800px;
-    height: 300px;
-  }
+#rounded-green {
+  border-radius: 30px;
+  border: 1px solid #cfd992;
+  margin: 30px;
+  padding: 20px;
+  width: 800px;
+  height: 300px;
+}
 
-  #rounded-red {
-    border-radius: 30px;
-    border: 1px solid #E4A0B0;
-    margin: 30px;
-    padding: 20px;
-    width: 800px;
-    height: 300px;
-  }
+#rounded-red {
+  border-radius: 30px;
+  border: 1px solid #e4a0b0;
+  margin: 30px;
+  padding: 20px;
+  width: 800px;
+  height: 300px;
+}
 
-  #red-btn {
-      border-radius: 45px;
-      border: 2px solid #E4A0B0;
-      padding: 20px;
-      width: 275px;
-      height: 100px;
-      float: left;
-    }
-
+#red-btn {
+  border-radius: 45px;
+  border: 2px solid #e4a0b0;
+  padding: 20px;
+  width: 275px;
+  height: 100px;
+  float: left;
+}

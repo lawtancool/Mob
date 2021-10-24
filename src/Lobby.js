@@ -52,49 +52,63 @@ const Lobby = (props) => {
     return (
         <div className='questions'>
             <h1>Preferences</h1> 
-            <form id="rounded-tan" onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:
+            <form id="my-form" onSubmit={handleSubmit}>
+                {/* <label id="rounded-tan">Name:
                 <input 
                     type="text" 
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 </label>
-                <label htmlFor="zip">Postal Code:
+                <label id="rounded-tan">Postal Code:
                 <input 
                     type="text" 
                     value={postalCode}
                     onChange={(e) => setPostalCode(e.target.value)}
                 />
                 </label>
-                <label htmlFor="distance">Distance:
+                <label id="rounded-tan">Distance:
                 <input 
                     type="number" 
                     value={distance}
                     onChange={(e) => setDistance(e.target.value)}
                 />
-                </label>
+                </label> */}
+                <input type="text" id="rounded-tan" name="name" placeholder="Name" value={name}
+                    onChange={(e) => setName(e.target.value)} /><br/>
+                <input type="number" id = "rounded-tan" name="postalcode" placeholder="Postal Code" value={postalCode}
+                    onChange={(e) => setPostalCode(e.target.value)}/><br/>
+                <input type="text" id="rounded-tan" name="distance" placeholder="Distance" value={distance} 
+                    onChange={(e) => setDistance(e.target.value)}/><br></br>
                 {/* <input type="submit" /> */}
             </form>
             <div className="dietary">
-                <h2>Dietary Preferences</h2>
+                <div id = "rounded-green">
+                <h4>
+                    Dietary Preferences
+                </h4>
                 <CreatableSelect
                     isMulti
                     onChange={event => handleDropdownChange(event)}
                     options={dietOptions}
                 />
+                </div>
+                
+
             </div>
             <div className="time">
-                <ScheduleSelector
-                    selection={schedule}
-                    numDays={5}
-                    minTime={8}
-                    maxTime={22}
-                    hourlyChunks={2}
-                    onChange={event => handleScheduleChange(event)}
-                />
+                <div id = "rounded-red">
+                    <ScheduleSelector
+                        selection={schedule}
+                        numDays={5}
+                        minTime={8}
+                        maxTime={22}
+                        hourlyChunks={2}
+                        onChange={event => handleScheduleChange(event)}
+                    />
+                </div>
             </div>
-            <button form='rounded-tan' type="submit">Next</button>
+            <button form='my-form' type="submit">Next</button>
         </div>
     );
 }
