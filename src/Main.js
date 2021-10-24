@@ -24,7 +24,7 @@ const Main = (props) => {
             <br></br>
             <div className = "center-container">
                 <button id = "rounded-edge2">copy</button>
-                <Link to={newLobbyRef.id}><button id = "rounded-edge2">enter lobby</button></Link>
+                <Link to={newLobbyRef.id}><button id = "rounded-edge2">let's mob!</button></Link>
             </div>
             <img className = "center-container" src = {logo} alt = "Logo" />
         </div>
