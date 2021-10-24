@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: 'Red Hat Text', sans-serif;
+  text-align: center;
 }
 
 .App {
@@ -77,14 +78,25 @@ body {
   #rounded-tan {
     border-radius: 30px;
     border: 1px solid #F1DAC5;
+    margin: 30px;
     padding: 20px;
     width: 800px;
-    height: 80px;
+    height: 50px;
   }
 
   #rounded-green {
     border-radius: 30px;
     border: 1px solid #cfd992;
+    margin: 30px;
+    padding: 20px;
+    width: 800px;
+    height: 300px;
+  }
+
+  #rounded-red {
+    border-radius: 30px;
+    border: 1px solid #E4A0B0;
+    margin: 30px;
     padding: 20px;
     width: 800px;
     height: 300px;
