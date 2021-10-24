@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Red+Hat+Text&display=swap");
+
+.main-page {
+  background-color: #FFF4EE;
+}
+
 body {
   margin: 0;
   font-family: "Red Hat Text", sans-serif;
@@ -38,7 +43,12 @@ h2 {
 }
 
 .url-container {
-  font-size: 40px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
 }
 
 button {
@@ -57,8 +67,8 @@ p {
   border-radius: 35px;
   border: 2px solid #e4a0b0;
   padding: 20px;
-  max-width: 500px;
-  height: 20px;
+  width: 300px;
+  height: 10px;
 }
 
 #rounded-edge2 {
@@ -66,9 +76,8 @@ p {
   border-radius: 35px;
   border: 2px solid #cfd992;
   background: #cfd992;
-  padding-bottom: 20px;
-  max-width: 275px;
-  height: 20px;
+  width: 140px;
+  height: 40px;
 }
 
 #rounded-tan {

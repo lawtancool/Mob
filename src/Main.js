@@ -9,14 +9,14 @@ const Main = (props) => {
     // Add a new document with a generated id
     const newLobbyRef = doc(collection(db, "lobbies"));
     return (
-        <div>
+        <div class = "main-page">
             <div className = "mob">
                 <title>Mob</title>
                 <h1>Mob</h1>
             </div>
             <h2>Make it easy to eat with friends!</h2>
             <h2>Where are we mobbing tonight?</h2>
-            <p className = "center-container" id = "rounded-edge1">
+            <p className = "center-container" className = "url-container" id = "rounded-edge1" >
             {window.location.origin + "/" + newLobbyRef.id}
             </p>
             <br></br>
