@@ -1,15 +1,15 @@
 import { React, useState, useEffect }from 'react';
-import { Router, Switch, Route, Link, useHistory, useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import GoogleMapReact from 'google-map-react';
 
 const Map = (props) => {
 
-    const params = useParams();
-    const lobbyId = params.lobby_id;
+    // const params = useParams();
+    // const lobbyId = params.lobby_id;
     const [center, setCenter] = useState({}); 
     const zoom = 14;
 
-    const AnyReactComponent = ({ text }) => <div>{text}</div>;
+    // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
     useEffect(() => {
         if (navigator.geolocation) {

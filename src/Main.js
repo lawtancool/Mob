@@ -1,9 +1,8 @@
 import React from 'react';
-import { Router, Switch, Route, Link, useHistory } from 'react-router-dom';
-import { collection, doc, setDoc } from "firebase/firestore"; 
+import { Link } from 'react-router-dom';
+import { collection, doc } from "firebase/firestore"; 
 
 import { db } from './firebase';
-import { logDOM } from '@testing-library/react';
 import logo from './logo.png';
 
 const Main = (props) => {
@@ -18,7 +17,7 @@ const Main = (props) => {
             </div>
             <h2>Make it easy to eat with friends!</h2>
             <h2>Where are we mobbing tonight?</h2>
-            <p className = "center-container" className = "url-container" id = "rounded-edge1" >
+            <p className = "url-container" id = "rounded-edge1" >
             {window.location.origin + "/" + newLobbyRef.id}
             </p>
             <br></br>

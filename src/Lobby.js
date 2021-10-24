@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Router, Switch, Route, Link, useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { doc, setDoc } from "firebase/firestore";
 
 import CreatableSelect from 'react-select/creatable';
