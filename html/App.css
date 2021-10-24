@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@100&family=Red+Hat+Text:wght@300&display=swap');
+body {
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .mob {
+    text-align: center;
+    font-family: "Major Mono Display", monospace;
+    font-size: 10vw;
+  }
+  
+  body {
+    font-family: "Red Hat Text", sans-serif;
+  }
+  
+  rounded-edge1 {
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #e4a0b0;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  rounded-edge2 {
+    text-align: center;
+    border-radius: 25px;
+    background: #cfd992;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  /*.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }*/
+  
