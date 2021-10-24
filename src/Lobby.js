@@ -80,7 +80,7 @@ const Lobby = (props) => {
                     onChange={(e) => setName(e.target.value)} /><br/>
                 <input type="number" id = "rounded-tan" name="postalcode" placeholder="Postal Code" value={postalCode}
                     onChange={(e) => setPostalCode(e.target.value)}/><br/>
-                <input type="text" id="rounded-tan" name="distance" placeholder="Distance" value={distance} 
+                <input type="number" id="rounded-tan" name="distance" placeholder="Distance" value={distance} 
                     onChange={(e) => setDistance(e.target.value)}/><br></br>
                 {/* <input type="submit" /> */}
             </form>
