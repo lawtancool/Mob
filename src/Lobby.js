@@ -8,6 +8,7 @@ const Lobby = (props) => {
     const [name, setName] = useState("");
     const [postalCode, setPostalCode] = useState("");
     const [distance, setDistance] = useState("");
+    const [selectedDietOptions, setSelectedDietOptions] = useState([]);
 
     const params = useParams();
     const lobbyId = params.lobby_id;
@@ -15,14 +16,21 @@ const Lobby = (props) => {
         { value: "vegan", label: "Vegan"},
         { value: "vegetarian", label: "Vegetarian"},
         { value: "halal", label: "Halal"},
-
     ]
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      alert(name + " " + postalCode + " " + distance)
+      alert(name + " " + postalCode + " " + distance + " " + selectedDietOptions)
     }
 
+    const handleDropdownChange = (event) => {
+        let diet_prefs = [];
+        for(let i = 0; i < event.length; i++) {
+            diet_prefs.push(event[i]["value"]);
+        }
+        setSelectedDietOptions(diet_prefs);
+        console.log(diet_prefs);
+    }
     
 
     return (
@@ -54,7 +62,7 @@ const Lobby = (props) => {
             </form>
             <CreatableSelect
                 isMulti
-                // onChange={this.handleChange}
+                onChange={event => handleDropdownChange(event)}
                 options={dietOptions}
             />
         </div>
