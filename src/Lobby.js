@@ -1,22 +1,33 @@
 import { React, useState } from 'react';
 import { Router, Switch, Route, Link, useHistory, useParams } from 'react-router-dom';
 
+import CreatableSelect from 'react-select/creatable';
+import { ActionMeta, OnChangeValue } from 'react-select';
+
 const Lobby = (props) => {
-    const params = useParams();
     const [name, setName] = useState("");
     const [postalCode, setPostalCode] = useState("");
     const [distance, setDistance] = useState("");
 
-    const lobby_id = params.lobby_id;
+    const params = useParams();
+    const lobbyId = params.lobby_id;
+    const dietOptions = [
+        { value: "vegan", label: "Vegan"},
+        { value: "vegetarian", label: "Vegetarian"},
+        { value: "halal", label: "Halal"},
+
+    ]
 
     const handleSubmit = (event) => {
       event.preventDefault();
       alert(name + " " + postalCode + " " + distance)
     }
 
+    
+
     return (
         <div className='insert_class_name_here'>
-            <h1>Welcome to lobby ID {lobby_id}</h1> 
+            <h1>Welcome to lobby ID {lobbyId}</h1> 
             <form onSubmit={handleSubmit}>
                 <label>Name:
                 <input 
@@ -41,6 +52,11 @@ const Lobby = (props) => {
                 </label>
                 <input type="submit" />
             </form>
+            <CreatableSelect
+                isMulti
+                // onChange={this.handleChange}
+                options={dietOptions}
+            />
         </div>
     );
 }
