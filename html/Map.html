@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
-    
-    <!--Google map-->
-        <center><div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-        style="border:0" allowfullscreen></iframe>
-    </div>
-    <!--Google Maps-->
-    <div style="width:500px;height:100px;border:1px solid #000;">This is a rectangle!</div>
 
+    <!--Google map-->
+    <center>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--Google Maps-->
+        <div style="width:500px;height:100px;border:1px solid #000;">This is a rectangle!</div>
+        <style>
+            .rectangle {
+                height: 50px;
+                width: 100px;
+                background-color: rgb(255, 255, 255);
+            }
+            .add {
+                border-color: #C4C4C4;
+                color: #C4C4C4;
+                fill: white;
+                border-radius: 100px;
+                background-color: white;
+                height:50px;
+                width:50px;
+                font-size:large;
+            }
+            </style>
+        <button class="btn add">+</button>
 
     </center>
-    
+
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
