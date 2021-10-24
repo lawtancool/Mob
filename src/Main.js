@@ -9,7 +9,7 @@ const Main = (props) => {
     // Add a new document with a generated id
     const newLobbyRef = doc(collection(db, "lobbies"));
     return (
-        <div class = "main-page">
+        <div className = "main-page">
             <div className = "mob">
                 <title>Mob</title>
                 <h1>Mob</h1>

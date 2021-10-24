@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Red+Hat+Text&display=swap");
 
 .main-page {
-  background-color: #FFF4EE;
+  background-color: #fff4ee;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
