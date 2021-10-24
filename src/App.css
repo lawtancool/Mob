@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Red+Hat+Text:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Red Hat Text", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -10,38 +16,71 @@
 .mob {
   text-align: center;
   font-family: "Major Mono Display", monospace;
-  font-size: 50px;
+  font-size: 100px;
 }
 
-body {
-  font-family: "Red Hat Text", sans-serif;
-}
-
-rounded-edge1 {
+h1 {
   text-align: center;
-  border-radius: 25px;
-  border: 2px solid #e4a0b0;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
 }
 
-rounded-edge2 {
+h2 {
   text-align: center;
-  border-radius: 25px;
-  background: #cfd992;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
 }
 
-/*.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}*/
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.url-container {
+  font-size: 40px;
+}
+
+button {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Poppins";
+}
+
+p {
+  text-align: center;
+  align-items: center;
+}
+
+#rounded-edge1 {
+  text-align: center;
+  border-radius: 45px;
+  border: 2px solid #e4a0b0;
+  padding: 20px;
+  width: 800px;
+  height: 30px;
+}
+
+#rounded-edge2 {
+  text-align: center;
+  border-radius: 45px;
+  border: 2px solid #cfd992;
+  background: #cfd992;
+  padding: 20px;
+  width: 275px;
+  height: 100px;
+}
+
+#rounded-tan {
+  border-radius: 25px;
+  border: 2px solid #e5e5e5;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rounded-green {
+  border-radius: 25px;
+  border: 2px solid #cfd992;
+  padding: 20px;
+  width: 800px;
+  height: 300px;
+}

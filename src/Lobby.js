@@ -50,45 +50,51 @@ const Lobby = (props) => {
     }
 
     return (
-        <div className='insert_class_name_here'>
-            <h1>Welcome to lobby ID {lobbyId}</h1> 
-            <form onSubmit={handleSubmit}>
-                <label>Name:
+        <div className='questions'>
+            <h1>Preferences</h1> 
+            <form id="rounded-tan" onSubmit={handleSubmit}>
+                <label htmlFor="name">Name:
                 <input 
                     type="text" 
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 </label>
-                <label>Postal Code:
+                <label htmlFor="zip">Postal Code:
                 <input 
                     type="text" 
                     value={postalCode}
                     onChange={(e) => setPostalCode(e.target.value)}
                 />
                 </label>
-                <label>Distance:
+                <label htmlFor="distance">Distance:
                 <input 
                     type="number" 
                     value={distance}
                     onChange={(e) => setDistance(e.target.value)}
                 />
                 </label>
-                <input type="submit" />
+                {/* <input type="submit" /> */}
             </form>
-            <CreatableSelect
-                isMulti
-                onChange={event => handleDropdownChange(event)}
-                options={dietOptions}
-            />
-             <ScheduleSelector
-                selection={schedule}
-                numDays={5}
-                minTime={8}
-                maxTime={22}
-                hourlyChunks={2}
-                onChange={event => handleScheduleChange(event)}
-            />
+            <div className="dietary">
+                <h2>Dietary Preferences</h2>
+                <CreatableSelect
+                    isMulti
+                    onChange={event => handleDropdownChange(event)}
+                    options={dietOptions}
+                />
+            </div>
+            <div className="time">
+                <ScheduleSelector
+                    selection={schedule}
+                    numDays={5}
+                    minTime={8}
+                    maxTime={22}
+                    hourlyChunks={2}
+                    onChange={event => handleScheduleChange(event)}
+                />
+            </div>
+            <button form='rounded-tan' type="submit">Next</button>
         </div>
     );
 }
