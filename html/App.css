@@ -102,6 +102,12 @@ body {
     height: 300px;
   }
 
-
-
+  #red-btn {
+      border-radius: 45px;
+      border: 2px solid #E4A0B0;
+      padding: 20px;
+      width: 275px;
+      height: 100px;
+      float: left;
+    }
 
