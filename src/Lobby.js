@@ -91,6 +91,15 @@ const Lobby = (props) => {
                     isMulti
                     onChange={event => handleDropdownChange(event)}
                     options={dietOptions}
+                    theme={(theme) => ({
+                        ...theme,
+                        borderRadius: 30,
+                        colors: {
+                          ...theme.colors,
+                          primary25: '#CFD992',
+                          primary: '#CFD992',
+                        },
+                      })}
                 />
                 </div>
                 
@@ -98,6 +107,9 @@ const Lobby = (props) => {
             </div>
             <div className="time">
                 <div id = "rounded-red">
+                <h4>
+                    Availability
+                </h4>
                     <ScheduleSelector
                         selection={schedule}
                         numDays={5}
