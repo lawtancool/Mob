@@ -2,13 +2,14 @@ import { React, useState } from 'react';
 import { Router, Switch, Route, Link, useHistory, useParams } from 'react-router-dom';
 
 import CreatableSelect from 'react-select/creatable';
-import { ActionMeta, OnChangeValue } from 'react-select';
+import ScheduleSelector from 'react-schedule-selector';
 
 const Lobby = (props) => {
     const [name, setName] = useState("");
     const [postalCode, setPostalCode] = useState("");
     const [distance, setDistance] = useState("");
     const [selectedDietOptions, setSelectedDietOptions] = useState([]);
+    const [schedule, setSchedule] = useState();
 
     const params = useParams();
     const lobbyId = params.lobby_id;
@@ -29,7 +30,10 @@ const Lobby = (props) => {
             diet_prefs.push(event[i]["value"]);
         }
         setSelectedDietOptions(diet_prefs);
-        console.log(diet_prefs);
+    }
+
+    const handleScheduleChange = (event) => {
+        setSchedule(event);
     }
     
 
@@ -64,6 +68,14 @@ const Lobby = (props) => {
                 isMulti
                 onChange={event => handleDropdownChange(event)}
                 options={dietOptions}
+            />
+             <ScheduleSelector
+                selection={schedule}
+                numDays={5}
+                minTime={8}
+                maxTime={22}
+                hourlyChunks={2}
+                onChange={event => handleScheduleChange(event)}
             />
         </div>
     );
