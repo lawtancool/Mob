@@ -16,8 +16,8 @@ export default function App() {
           renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path='/' component={Main} />
-          <Route exact path='/lobby' component={Lobby} />
-          <Route exact path='/map' component={Map} />
+          <Route exact path='/:lobby_id' component={Lobby} />
+          <Route exact path='/:lobby_id/map' component={Map} />
 
 
 
