@@ -1,8 +1,11 @@
 import { React, useState } from 'react';
 import { Router, Switch, Route, Link, useHistory, useParams } from 'react-router-dom';
+import { doc, setDoc } from "firebase/firestore";
 
 import CreatableSelect from 'react-select/creatable';
 import ScheduleSelector from 'react-schedule-selector';
+
+import { db } from './firebase';
 
 const Lobby = (props) => {
     const [name, setName] = useState("");
@@ -19,9 +22,19 @@ const Lobby = (props) => {
         { value: "halal", label: "Halal"},
     ]
 
+    const history = useHistory();
+
     const handleSubmit = (event) => {
       event.preventDefault();
-      alert(name + " " + postalCode + " " + distance + " " + selectedDietOptions)
+    //   alert(name + " " + postalCode + " " + distance + " " + selectedDietOptions + " " + schedule)
+      const userRef = doc(db, "lobbies", lobbyId, "users", name);
+      setDoc(userRef, {
+        postalCode: postalCode,
+        distance: distance,
+        selectedDietOptions: selectedDietOptions,
+        schedule: schedule,
+      });
+      history.push('/' + lobbyId + "/map");
     }
 
     const handleDropdownChange = (event) => {
@@ -35,7 +48,6 @@ const Lobby = (props) => {
     const handleScheduleChange = (event) => {
         setSchedule(event);
     }
-    
 
     return (
         <div className='insert_class_name_here'>
